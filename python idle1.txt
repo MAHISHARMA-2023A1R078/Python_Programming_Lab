@@ -1,0 +1,213 @@
+Python 3.13.7 (tags/v3.13.7:bcee1c3, Aug 14 2025, 14:15:11) [MSC v.1944 64 bit (AMD64)] on win32
+Enter "help" below or click "Help" above for more information.
+
+======================= RESTART: C:\pyt313\Codes\demo.py =======================
+welcome to the world of python
+hello world
+this file is to save the code
+dir()
+['__annotations__', '__builtins__', '__doc__', '__file__', '__loader__', '__name__', '__package__', '__spec__']
+help("if")
+The "if" statement
+******************
+
+The "if" statement is used for conditional execution:
+
+   if_stmt ::= "if" assignment_expression ":" suite
+               ("elif" assignment_expression ":" suite)*
+               ["else" ":" suite]
+
+It selects exactly one of the suites by evaluating the expressions one
+by one until one is found to be true (see section Boolean operations
+for the definition of true and false); then that suite is executed
+(and no other part of the "if" statement is executed or evaluated).
+If all expressions are false, the suite of the "else" clause, if
+present, is executed.
+
+Related help topics: TRUTHVALUE
+
+help("while")
+The "while" statement
+*********************
+
+The "while" statement is used for repeated execution as long as an
+expression is true:
+
+   while_stmt ::= "while" assignment_expression ":" suite
+                  ["else" ":" suite]
+
+This repeatedly tests the expression and, if it is true, executes the
+first suite; if the expression is false (which may be the first time
+it is tested) the suite of the "else" clause, if present, is executed
+and the loop terminates.
+
+A "break" statement executed in the first suite terminates the loop
+without executing the "else" clause’s suite.  A "continue" statement
+executed in the first suite skips the rest of the suite and goes back
+to testing the expression.
+
+Related help topics: break, continue, if, TRUTHVALUE
+
+Related help topics: break, continue, if, TRUTHVALUEhelp("if")
+SyntaxError: invalid syntax
+help()
+Welcome to Python 3.13's help utility! If this is your first time using
+Python, you should definitely check out the tutorial at
+https://docs.python.org/3.13/tutorial/.
+
+Enter the name of any module, keyword, or topic to get help on writing
+Python programs and using Python modules.  To get a list of available
+modules, keywords, symbols, or topics, enter "modules", "keywords",
+"symbols", or "topics".
+
+Each module also comes with a one-line summary of what it does; to list
+the modules whose name or summary contain a given string such as "spam",
+enter "modules spam".
+
+To quit this help utility and return to the interpreter,
+enter "q", "quit" or "exit".
+
+help> if
+The "if" statement
+******************
+
+The "if" statement is used for conditional execution:
+
+   if_stmt ::= "if" assignment_expression ":" suite
+               ("elif" assignment_expression ":" suite)*
+               ["else" ":" suite]
+
+It selects exactly one of the suites by evaluating the expressions one
+by one until one is found to be true (see section Boolean operations
+for the definition of true and false); then that suite is executed
+(and no other part of the "if" statement is executed or evaluated).
+If all expressions are false, the suite of the "else" clause, if
+present, is executed.
+
+Related help topics: TRUTHVALUE
+
+help> for
+The "for" statement
+*******************
+
+The "for" statement is used to iterate over the elements of a sequence
+(such as a string, tuple or list) or other iterable object:
+
+   for_stmt ::= "for" target_list "in" starred_list ":" suite
+                ["else" ":" suite]
+
+The "starred_list" expression is evaluated once; it should yield an
+*iterable* object.  An *iterator* is created for that iterable. The
+first item provided by the iterator is then assigned to the target
+list using the standard rules for assignments (see Assignment
+statements), and the suite is executed.  This repeats for each item
+provided by the iterator.  When the iterator is exhausted, the suite
+in the "else" clause, if present, is executed, and the loop
+terminates.
+
+A "break" statement executed in the first suite terminates the loop
+without executing the "else" clause’s suite.  A "continue" statement
+executed in the first suite skips the rest of the suite and continues
+with the next item, or with the "else" clause if there is no next
+item.
+
+The for-loop makes assignments to the variables in the target list.
+This overwrites all previous assignments to those variables including
+those made in the suite of the for-loop:
+
+   for i in range(10):
+       print(i)
+       i = 5             # this will not affect the for-loop
+                         # because i will be overwritten with the next
+                         # index in the range
+
+Names in the target list are not deleted when the loop is finished,
+but if the sequence is empty, they will not have been assigned to at
+all by the loop.  Hint: the built-in type "range()" represents
+immutable arithmetic sequences of integers. For instance, iterating
+"range(3)" successively yields 0, 1, and then 2.
+
+Changed in version 3.11: Starred elements are now allowed in the
+expression list.
+
+Related help topics: break, continue, while
+
+help> while
+The "while" statement
+*********************
+
+The "while" statement is used for repeated execution as long as an
+expression is true:
+
+   while_stmt ::= "while" assignment_expression ":" suite
+                  ["else" ":" suite]
+
+This repeatedly tests the expression and, if it is true, executes the
+first suite; if the expression is false (which may be the first time
+it is tested) the suite of the "else" clause, if present, is executed
+and the loop terminates.
+
+A "break" statement executed in the first suite terminates the loop
+without executing the "else" clause’s suite.  A "continue" statement
+executed in the first suite skips the rest of the suite and goes back
+to testing the expression.
+
+Related help topics: break, continue, if, TRUTHVALUE
+
+help> print("hello")
+No Python documentation found for 'print("hello")'.
+Use help() to get the interactive help utility.
+Use help(str) for help on the str class.
+
+help> 
+
+You are now leaving help and returning to the Python interpreter.
+If you want to ask for help on a particular object directly from the
+interpreter, you can type "help(object)".  Executing "help('string')"
+has the same effect as typing a particular string at the help> prompt.
+num1 =100
+dir()
+['__annotations__', '__builtins__', '__doc__', '__file__', '__loader__', '__name__', '__package__', '__spec__', 'num1']
+num1
+100
+num1=903284482758979857905791048572983475899877777777777754987598247592151092852095921859210850912821093859205757584758475759328493284903284903849032840938490384093820932849385475
+dir()
+['__annotations__', '__builtins__', '__doc__', '__file__', '__loader__', '__name__', '__package__', '__spec__', 'num1']
+num1
+903284482758979857905791048572983475899877777777777754987598247592151092852095921859210850912821093859205757584758475759328493284903284903849032840938490384093820932849385475
+num1+1
+903284482758979857905791048572983475899877777777777754987598247592151092852095921859210850912821093859205757584758475759328493284903284903849032840938490384093820932849385476
+903284482758979857905791048572983475899877777777777754987598247592151092852095921859210850912821093859205757584758475759328493284903284903849032840938490384093820932849385476
+903284482758979857905791048572983475899877777777777754987598247592151092852095921859210850912821093859205757584758475759328493284903284903849032840938490384093820932849385476
+num1=int(input("enter number"))
+enter numberjames
+Traceback (most recent call last):
+  File "<pyshell#13>", line 1, in <module>
+    num1=int(input("enter number"))
+ValueError: invalid literal for int() with base 10: 'james'
+name="james"
+name
+'james'
+num1=1000
+num1
+1000
+type(num1)
+<class 'int'>
+num1=13.56
+num1
+13.56
+type(num1)
+<class 'float'>
+num1="mahi"
+num1
+'mahi'
+type(num1)
+<class 'str'>
+num1=1000
+id(num1)
+2005209882192
+num1=num1+1000
+num1
+2000
+id(num1)
+2005209882032
